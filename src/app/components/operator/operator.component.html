@@ -1,0 +1,8 @@
+<div *ngIf="isNaN; else number" class="operator button">
+  <span [class]="'icon-' + label"></span>
+</div>
+<ng-template #number>
+  <div class="number button">
+    <span>{{ label }}</span>
+  </div>
+</ng-template>
